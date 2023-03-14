@@ -1,0 +1,67 @@
+nav{
+    .container{
+        max-width: 1440px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        h1{
+            font-size: 32px;
+            font-weight: 500;
+            color: royalblue;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            li{
+                font-size: 20px;
+                letter-spacing: 1px;
+                color: gray;
+                cursor: pointer;
+                transition: .3s;
+                border-bottom: 2px solid transparent;
+                &:hover{
+                    color: black;
+                    border-bottom: 2px solid royalblue;
+                }
+            }
+        }
+        .btn-c{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            button{
+                font-size: 18px;
+                font-weight: 500;
+                padding: 8px 16px;
+                letter-spacing: 1px;
+                transition: .2s;
+                &#btn-login{
+                    color: royalblue;
+                    &:hover{
+                        color: rgb(0, 19, 77);
+                    }
+                }
+                &#btn-signUp{
+                    border: 2px solid rgb(38, 84, 222);
+                    color: royalblue;
+                    background: #fff;
+                    border-radius: 8px;
+                    &:hover{
+                        background: royalblue;
+                        color: #fff;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+
+}
